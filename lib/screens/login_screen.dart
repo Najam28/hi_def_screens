@@ -48,6 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Padding(
                         padding: const EdgeInsets.all(15.0),
                         child: TextFormField(
+                          textInputAction: TextInputAction.go,
                           decoration: InputDecoration(
                             label: Text("Enter Your Username"),
                             hintText: "Username",
@@ -57,6 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Padding(
                         padding: const EdgeInsets.all(15.0),
                         child: TextFormField(
+                          textInputAction: TextInputAction.go,
                           obscureText: true,
                           decoration: InputDecoration(
                             label: Text("Enter Your Password"),
@@ -71,7 +73,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           children: [
                             GestureDetector(
                               child: Text(
-                                "Forgot Password",
+                                "Forgot Password?",
                                 style: GoogleFonts.lato(
                                   textStyle: TextStyle(
                                     color: Colors.blue,
